@@ -1,0 +1,28 @@
+00:22:06 [App     ] OpenMVS x64 v2.4.0 (a4c900a*)
+00:22:06 [App     ] Build date: May 12 2026, 22:03:22
+00:22:06 [App     ] CPU: 13th Gen Intel(R) Core(TM) i7-13700KF (24 cores)
+00:22:06 [App     ] RAM: 31.82GB Physical Memory 128.00TB Virtual Memory
+00:22:06 [App     ] OS: Windows 11+ x64
+00:22:06 [App     ] Disk: 101.27GB (953.60GB) space
+00:22:06 [App     ] SSE & AVX compatible CPU & OS detected
+00:22:06 [App     ] Command line: TextureMesh scene_dense.mvs -m scene_dense_mesh_refine.ply -o scene_dense_mesh_refine_texture.mvs
+00:22:06 [Scene   ] Camera model loaded: platform 0; camera  0; f 1.006x1.012; poses 11
+00:22:06 [Scene   ] Scene loaded in interface format from 'scene_dense.mvs' (22ms):
+	11 images (11 calibrated) with a total of 15.81 MPixels (1.44 MPixels/image)
+	20951 points, 0 vertices, 0 faces
+00:22:06 [Mesh    ] Mesh 'scene_dense_mesh_refine.ply' loaded: 123010 vertices, 244247 faces (17ms)
+00:22:14 [ScnTextr] Assigning the best view to each face completed: 244247 faces, 1319 patches (8s123ms)
+00:22:16 [ScnTextr] Generating texture atlas and image completed: 948 patches, 4096 image size, 1 textures (1s815ms)
+00:22:16 [App     ] Mesh texturing completed: 123010 vertices, 244247 faces (9s958ms)
+00:22:20 [Mesh    ] Mesh 'scene_dense_mesh_refine_texture.ply' saved: 123010 vertices, 244247 faces (3s584ms)
+00:22:20 [App     ] MEMORYINFO: {
+00:22:20 [App     ] 	PageFaultCount 1898247
+00:22:20 [App     ] 	PeakWorkingSetSize 3.07GB
+00:22:20 [App     ] 	WorkingSetSize 39.02MB
+00:22:20 [App     ] 	QuotaPeakPagedPoolUsage 236.52KB
+00:22:20 [App     ] 	QuotaPagedPoolUsage 232.88KB
+00:22:20 [App     ] 	QuotaPeakNonPagedPoolUsage 63.23KB
+00:22:20 [App     ] 	QuotaNonPagedPoolUsage 31.09KB
+00:22:20 [App     ] 	PagefileUsage 29.50MB
+00:22:20 [App     ] 	PeakPagefileUsage 3.06GB
+00:22:20 [App     ] } ENDINFO

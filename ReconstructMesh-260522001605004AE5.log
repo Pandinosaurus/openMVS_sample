@@ -1,0 +1,31 @@
+00:16:05 [App     ] OpenMVS x64 v2.4.0 (a4c900a*)
+00:16:05 [App     ] Build date: May 12 2026, 22:03:22
+00:16:05 [App     ] CPU: 13th Gen Intel(R) Core(TM) i7-13700KF (24 cores)
+00:16:05 [App     ] RAM: 31.82GB Physical Memory 128.00TB Virtual Memory
+00:16:05 [App     ] OS: Windows 11+ x64
+00:16:05 [App     ] Disk: 91.78GB (953.60GB) space
+00:16:05 [App     ] SSE & AVX compatible CPU & OS detected
+00:16:05 [App     ] Command line: ReconstructMesh scene_dense.mvs -p scene_dense.ply
+00:16:05 [Scene   ] Camera model loaded: platform 0; camera  0; f 1.006x1.012; poses 11
+00:16:05 [Scene   ] Scene loaded in interface format from 'scene_dense.mvs' (12ms):
+	11 images (11 calibrated) with a total of 15.81 MPixels (1.44 MPixels/image)
+	20951 points, 0 vertices, 0 faces
+00:16:05 [PointCld] Point-cloud 'scene_dense.ply' loaded: 425342 points (206ms)
+00:16:08 [Scene   ] Delaunay tetrahedralization completed: 425342 points -> 416484 vertices, 2627873 (+152) cells, 5255822 (+228) faces (2s224ms)
+00:16:14 [ScnRecnt] Delaunay tetrahedras weighting completed: 2628025 cells, 5256050 faces (6s25ms)
+00:16:20 [ScnRecnt] Delaunay tetrahedras graph-cut completed (264662 flow): 406308 vertices, 812709 faces (5s905ms)
+00:16:20 [App     ] Mesh reconstruction completed: 406369 vertices, 812709 faces (14s686ms)
+00:16:20 [App     ] Mesh trimmed to ROI: 0 vertices and 0 faces removed (5ms)
+00:16:30 [Mesh    ] Cleaned mesh: 406338 vertices, 812448 faces (9s606ms)
+00:16:30 [Mesh    ] Mesh 'scene_dense_mesh.ply' saved: 406338 vertices, 812448 faces (81ms)
+00:16:30 [App     ] MEMORYINFO: {
+00:16:30 [App     ] 	PageFaultCount 896214
+00:16:30 [App     ] 	PeakWorkingSetSize 893.51MB
+00:16:30 [App     ] 	WorkingSetSize 29.31MB
+00:16:30 [App     ] 	QuotaPeakPagedPoolUsage 232.92KB
+00:16:30 [App     ] 	QuotaPagedPoolUsage 232.68KB
+00:16:30 [App     ] 	QuotaPeakNonPagedPoolUsage 33.48KB
+00:16:30 [App     ] 	QuotaNonPagedPoolUsage 28.16KB
+00:16:30 [App     ] 	PagefileUsage 20.66MB
+00:16:30 [App     ] 	PeakPagefileUsage 935.64MB
+00:16:30 [App     ] } ENDINFO

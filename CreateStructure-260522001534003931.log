@@ -1,0 +1,127 @@
+00:15:34 [App     ] OpenMVS x64 v2.4.0 (a4c900a*)
+00:15:34 [App     ] Build date: May 12 2026, 22:03:22
+00:15:34 [App     ] CPU: 13th Gen Intel(R) Core(TM) i7-13700KF (24 cores)
+00:15:34 [App     ] RAM: 31.82GB Physical Memory 128.00TB Virtual Memory
+00:15:34 [App     ] OS: Windows 11+ x64
+00:15:34 [App     ] Disk: 91.79GB (953.60GB) space
+00:15:34 [App     ] SSE & AVX compatible CPU & OS detected
+00:15:34 [App     ] Command line: CreateStructure -s C:/Pro/Datasets/SceauxCastle/images -o scene.sfm --export-mvs scene.mvs --extract-colors 1
+00:15:34 [App     ] Starting reconstruction from 'C:/Pro/Datasets/SceauxCastle/images'
+00:15:34 [App     ] Imported 11 images, 1 unique cameras (1 trusted intrinsics)
+00:15:34 [FeatExtr] SiftGPU initialized: CUDA mode (32768 max-features-per-image)
+00:15:35 [App     ] Features extracted (SIFTGPU): 249509 features (22682.64 per image) for 11 images (1s251ms)
+00:15:35 [PairMtch] PairsMatcher initialized with 24 threads, descriptor type: quantized, matcher: FLANN
+00:15:35 [PairMtch] Exhaustive matching 11 images...
+00:15:35 [PairMtch] SiftGPU matcher initialized: CUDA mode
+00:15:36 [PairMtch] Images matched: created 55/0 new/updated pairs (55 total from 55 exhaustive),
+105728/105733/113663 matches (1922.33/1922.42/2066.60 per pair) in 1s328ms
+00:15:36 [PairMtch] Filtered 35487 redundant keypoints from 249509 total keypoints, removed 8871 duplicate matches (4ms)
+00:15:36 [App     ] Connected components: 1 components, sizes: max 11, min 11, median 11.0, mean 11.00, std 0.00
+00:15:36 [App     ] Computed pairs weights (Intrinsic and Extrinsic): 55 pairs (1ms)
+00:15:36 [ViewGhCa] warning: no cameras to optimize (all trusted)
+00:15:36 [App     ] Reconstructing sub-scene 0 with 11 images...
+00:15:36 [App     ] Built 21348 tracks from 214022 observations and 42 pairs (avg 3.56 views/track) in 83ms
+00:15:36 [App     ] Selected reference view 3 with 23215 connections
+00:15:36 [App     ] Reference view 3 set to identity pose
+00:15:36 [App     ] Filtered connected views by inlier matches: kept 7/10 views with at least 924 inliers
+00:15:36 [App     ] Registered 7 views from relative poses
+00:15:36 [GlbSclAg] Global scale averaging completed: 28 indices, 168 pairs (exact gauge, fixed 15)
+00:15:36 [App     ] Triangulated 16713 tracks successfully (425 failed, 4210 invalid), total inliers 16713 from 21348 tracks, 3.28 views/track (4ms)
+00:15:36 [App     ] Bundle adjustment with 1 cameras, 8 images, 16713 tracks
+00:15:36 [App     ] Created 54819 reprojection residuals
+00:15:36 [App     ] Fixed all intrinsic parameters
+00:15:36 [App     ] Fixed view 3 (reference, no GPS)
+00:15:37 [App     ] BA Summary: Ceres Solver Report: Iterations: 11, Initial cost: 7.518921e+04, Final cost: 5.270210e+04, Termination: NO_CONVERGENCE
+00:15:37 [App     ] Bundle adjustment complete: 54819 reprojection residuals, 0 GPS residuals, 7.519e+04 -> 5.27e+04 cost (333ms)
+00:15:37 [App     ] Mean reprojection error: 1.13 pixels (0.03 deg) from 16733 tracks (3.28 views/track)
+00:15:37 [App     ] Triangulated 39 tracks successfully (276 failed, 4300 invalid), total inliers 16772 from 21348 tracks, 3.44 views/track (0ms)
+00:15:37 [App     ] Tracks filtered: 16759/21348 inliers, mean reprojection error 1.12 pixels (5.00 th), angular 0.027 deg, 3.32 views/track (completeness: 90.50 mean, 15.81 stddev)
+00:15:37 [App     ] Bundle adjustment with 1 cameras, 8 images, 16759 tracks
+00:15:37 [App     ] Created 55578 reprojection residuals
+00:15:37 [App     ] Fixed intrinsic parameters: 1, 2, 3, 7, 8, 9, 10, 11
+00:15:37 [App     ] Fixed view 3 (reference, no GPS)
+00:15:38 [App     ] BA Summary: Ceres Solver Report: Iterations: 26, Initial cost: 5.236084e+04, Final cost: 1.253219e+04, Termination: NO_CONVERGENCE
+00:15:38 [App     ] Camera intrinsics updated: fx 2999.13, fy 2999.13, cx 1415.50, cy 1063.50, k1 -0.2394, k2 0.2281, k3 0.1984, p1 0, p2 0
+00:15:38 [App     ] Updated intrinsics for 1 cameras
+00:15:38 [App     ] Bundle adjustment complete: 55578 reprojection residuals, 0 GPS residuals, 5.236e+04 -> 1.253e+04 cost (1s402ms)
+00:15:38 [App     ] Mean reprojection error: 0.47 pixels (0.01 deg) from 16759 tracks (3.32 views/track)
+00:15:38 [App     ] Triangulated 29 tracks successfully (296 failed, 4264 invalid), total inliers 16788 from 21348 tracks, 2.76 views/track (0ms)
+00:15:38 [App     ] Tracks filtered: 16767/21348 inliers, mean reprojection error 0.48 pixels (4.00 th), angular 0.013 deg, 3.39 views/track (completeness: 91.79 mean, 14.83 stddev)
+00:15:38 [App     ] Star initialization complete: 8 views, 16767 tracks (1s874ms)
+00:15:38 [App     ] Selected 2 images with 4073 best visible points
+00:15:38 [App     ] 	Image 8 registered: 3860/4073 correspondences (9/11 images, 94.77% avg inliers ratio)
+00:15:38 [App     ] Triangulated 1878 tracks successfully (289 failed, 2414 invalid), total inliers 18645 from 21348 tracks, 2.00 views/track (0ms)
+00:15:38 [App     ] Tracks filtered: 18645/21348 inliers, mean reprojection error 0.51 pixels (4.00 th), angular 0.014 deg, 3.46 views/track (completeness: 94.94 mean, 11.52 stddev)
+00:15:38 [App     ] Selected 2 images with 2994 best visible points
+00:15:38 [App     ] 	Image 9 registered: 2682/2994 correspondences (10/11 images, 92.17% avg inliers ratio)
+00:15:38 [App     ] Triangulated 1516 tracks successfully (230 failed, 957 invalid), total inliers 20161 from 21348 tracks, 2.00 views/track (0ms)
+00:15:38 [App     ] Tracks filtered: 20161/21348 inliers, mean reprojection error 0.54 pixels (4.00 th), angular 0.015 deg, 3.48 views/track (completeness: 97.20 mean, 8.55 stddev)
+00:15:38 [App     ] Selected 1 images with 1876 best visible points
+00:15:38 [App     ] 	Image 10 registered: 1518/1876 correspondences (11/11 images, 88.42% avg inliers ratio)
+00:15:38 [App     ] Triangulated 21107 tracks successfully (241 failed, 0 invalid), total inliers 21107 from 21348 tracks, 3.52 views/track (7ms)
+00:15:38 [App     ] Bundle adjustment with 1 cameras, 11 images, 21107 tracks
+00:15:39 [App     ] Created 74359 reprojection residuals
+00:15:39 [App     ] Fixed intrinsic parameters: 1, 9, 10, 11
+00:15:39 [App     ] Fixed view 2 (reference, no GPS)
+00:15:42 [App     ] BA Summary: Ceres Solver Report: Iterations: 26, Initial cost: 1.948399e+04, Final cost: 1.766050e+04, Termination: CONVERGENCE
+00:15:42 [App     ] Camera intrinsics updated: fx 2986.09, fy 2986.09, cx 1464.68, cy 1115.39, k1 -0.247, k2 0.2526, k3 0.1891, p1 0.001541, p2 -0.0004348
+00:15:42 [App     ] Updated intrinsics for 1 cameras
+00:15:42 [App     ] Bundle adjustment complete: 74359 reprojection residuals, 0 GPS residuals, 1.948e+04 -> 1.766e+04 cost (3s93ms)
+00:15:42 [App     ] Mean reprojection error: 0.49 pixels (0.01 deg) from 21108 tracks (3.52 views/track)
+00:15:42 [App     ] Tracks filtered: 21090/21348 inliers, mean reprojection error 0.48 pixels (4.00 th), angular 0.013 deg, 3.52 views/track (completeness: 99.60 mean, 3.57 stddev)
+00:15:42 [App     ] Resection registered 3 new images, total 11/11 images (3s397ms)
+00:15:42 [App     ] Bundle adjustment with 1 cameras, 11 images, 21090 tracks
+00:15:42 [App     ] Created 74302 reprojection residuals
+00:15:42 [App     ] Fixed intrinsic parameters: 1, 9, 10, 11
+00:15:42 [App     ] Fixed view 2 (reference, no GPS)
+00:15:43 [App     ] BA Summary: Ceres Solver Report: Iterations: 7, Initial cost: 1.709590e+04, Final cost: 1.694820e+04, Termination: CONVERGENCE
+00:15:43 [App     ] Camera intrinsics updated: fx 2986.18, fy 2986.18, cx 1465.51, cy 1115.48, k1 -0.2476, k2 0.2575, k3 0.1759, p1 0.001468, p2 -0.0004512
+00:15:43 [App     ] Updated intrinsics for 1 cameras
+00:15:43 [App     ] Bundle adjustment complete: 74302 reprojection residuals, 0 GPS residuals, 1.71e+04 -> 1.695e+04 cost (1s25ms)
+00:15:43 [App     ] Mean reprojection error: 0.48 pixels (0.01 deg) from 21090 tracks (3.52 views/track)
+00:15:43 [App     ] Tracks filtered: 21076/21348 inliers, mean reprojection error 0.48 pixels (4.00 th), angular 0.013 deg, 3.52 views/track (completeness: 99.60 mean, 3.58 stddev)
+00:15:43 [App     ] Hierarchical reconstruction complete: 11/11 images, 21076/21348 points (6s452ms)
+00:15:43 [App     ] Bundle adjustment with 1 cameras, 11 images, 21076 tracks
+00:15:43 [App     ] Created 74274 reprojection residuals
+00:15:43 [App     ] Fixed intrinsic parameters: 1, 2, 3, 7, 8, 9, 10, 11
+00:15:43 [App     ] Fixed view 2 (reference, no GPS)
+00:15:43 [App     ] BA Summary: Ceres Solver Report: Iterations: 4, Initial cost: 1.692676e+04, Final cost: 1.691678e+04, Termination: CONVERGENCE
+00:15:43 [App     ] Camera intrinsics updated: fx 2986.10, fy 2986.10, cx 1465.51, cy 1115.48, k1 -0.2475, k2 0.2572, k3 0.175, p1 0.001468, p2 -0.0004512
+00:15:43 [App     ] Updated intrinsics for 1 cameras
+00:15:43 [App     ] Bundle adjustment complete: 74274 reprojection residuals, 0 GPS residuals, 1.693e+04 -> 1.692e+04 cost (502ms)
+00:15:43 [App     ] Mean reprojection error: 0.48 pixels (0.01 deg) from 21076 tracks (3.52 views/track)
+00:15:43 [App     ] Tracks filtered: 21076/21348 inliers, mean reprojection error 0.48 pixels (4.00 th), angular 0.013 deg, 3.52 views/track (completeness: 99.60 mean, 3.58 stddev)
+00:15:43 [App     ] Triangulated 17 tracks successfully (255 failed, 0 invalid), total inliers 21093 from 21348 tracks, 2.00 views/track (0ms)
+00:15:43 [App     ] Tracks filtered: 21095/21348 inliers, mean reprojection error 0.48 pixels (4.00 th), angular 0.013 deg, 3.52 views/track (completeness: 99.59 mean, 3.60 stddev)
+00:15:43 [App     ] Bundle adjustment with 1 cameras, 11 images, 21095 tracks
+00:15:43 [App     ] Created 74312 reprojection residuals
+00:15:43 [App     ] Fixed intrinsic parameters: 1, 9, 10, 11
+00:15:43 [App     ] Fixed view 2 (reference, no GPS)
+00:15:46 [App     ] BA Summary: Ceres Solver Report: Iterations: 19, Initial cost: 1.708780e+04, Final cost: 1.706509e+04, Termination: CONVERGENCE
+00:15:46 [App     ] Camera intrinsics updated: fx 2985.61, fy 2985.61, cx 1466.13, cy 1116.10, k1 -0.2472, k2 0.2558, k3 0.1764, p1 0.001472, p2 -0.0004225
+00:15:46 [App     ] Updated intrinsics for 1 cameras
+00:15:46 [App     ] Bundle adjustment complete: 74312 reprojection residuals, 0 GPS residuals, 1.709e+04 -> 1.707e+04 cost (2s945ms)
+00:15:46 [App     ] Mean reprojection error: 0.48 pixels (0.01 deg) from 21095 tracks (3.52 views/track)
+00:15:46 [App     ] Tracks filtered: 20951/21348 inliers, mean reprojection error 0.44 pixels (2.00 th), angular 0.011 deg, 3.48 views/track (completeness: 98.66 mean, 6.60 stddev)
+00:15:46 [App     ] Image coverage: mean 67.36 stddev 4.50 range [61.00,76.00] n 11
+00:15:46 [App     ] Triangulation angle: mean 14.41° stddev 2.89° range [11.15°,21.61°] n 11
+00:15:46 [App     ] Established visibility graph with 11/11 images and 55/55 image pairs
+00:15:46 [App     ] Kept 11 images in largest connected component (from 1 components)
+00:15:46 [App     ] Image covisibility clustering: median=2334, MAD=926, threshold=1408
+00:15:46 [App     ] Kept 11 images in largest connected component (from 1 components)
+00:15:46 [App     ] Filtered 0/11 weakly connected images in 16ms
+00:15:47 [App     ] Colors sampled for 21348 tracks (280ms)
+00:15:47 [App     ] Reconstruction complete: 11 images (11 total), 20951 points (21348 total) in 12s988ms
+00:15:47 [App     ] Scene saved (141ms): 1 cameras, 11 images (11 calibrated), 55 pairs, 21348 tracks
+00:15:50 [App     ] Scene exported as MVS: 1 platforms, 11 images (11 valid), 20951 points (undistorted) to 'scene.mvs' (3s378ms)
+00:15:50 [App     ] MEMORYINFO: {
+00:15:50 [App     ] 	PageFaultCount 1607619
+00:15:50 [App     ] 	PeakWorkingSetSize 2.63GB
+00:15:50 [App     ] 	WorkingSetSize 316.70MB
+00:15:50 [App     ] 	QuotaPeakPagedPoolUsage 2.89MB
+00:15:50 [App     ] 	QuotaPagedPoolUsage 2.09MB
+00:15:50 [App     ] 	QuotaPeakNonPagedPoolUsage 183.08KB
+00:15:50 [App     ] 	QuotaNonPagedPoolUsage 52.91KB
+00:15:50 [App     ] 	PagefileUsage 533.77MB
+00:15:50 [App     ] 	PeakPagefileUsage 5.97GB
+00:15:50 [App     ] } ENDINFO
